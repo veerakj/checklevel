@@ -1,0 +1,1114 @@
+/*----------------------------------------------
+Template Name :Check Your Level
+Author : Jy_$n;
+
+/*===================================================
+			       ==Base CSS==
+===================================================*/
+
+/*------Default Settings-------*/
+body{
+    font-family: 'Lato', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+ul,ol{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+a,a:hover,a:focus{
+	text-decoration: none;
+    outline: none;
+}
+/*------Maximum Image Width--------*/
+img{
+    max-width: 100%;
+}
+/*-------Transition css--------*/
+.contact_us button,.registration_btn button{
+	-moz-transition:.50s ease-in-out;
+	-webkit-transition:.50s ease-in-out;
+    -o-transition:.50s ease-in-out;
+    -ms-transition:.50s ease-in-out;
+	transition:.50s ease-in-out;
+}
+/* Form elements */
+button,select,textarea{
+    cursor: pointer;
+    outline: none;
+}
+.section_padding{
+    padding:101px 0;
+}
+.cmn_title{
+    text-align: center;
+}
+.cmn_title h2{
+    color:#3b3633;
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+.cmn_title h3{
+    color:#000;
+    font-size:18px;
+    font-weight: 600;
+}
+/*===================================================
+           ==Main Banner CSS==
+===================================================*/
+.logo img,.tagline{
+    display: inline-block;
+    vertical-align:middle;
+}
+.header_top{
+    padding:40px 0 0 150px;
+}
+.banner_info{
+    margin-top:48px;
+}
+.tagline p{
+    color:#111;
+    font-size:12px;
+    margin-left:21px;
+    font-weight:600;
+}
+.banner_info p{
+    padding-right: 10px;
+    color:#cb0012;
+    font-size:22px;
+    background:#fff;
+    font-weight: 600;
+    display: inline-block;
+}
+.banner_info h1{
+    color:#fff;
+    margin-top:49px;
+}
+.banner_info h3{
+    color:#fff;
+    text-align:center;
+    font-size:37px;
+    letter-spacing:.5em;
+    position: relative;
+}
+.banner_bottom{
+    margin-top: 100px;
+    margin-left: 60px;
+}
+.header_bottom,.no_1{
+    display: inline-block;
+}
+.header_bottom{
+    margin-right: 4px;
+    vertical-align: bottom;
+}
+.call{
+    margin-bottom:40px;
+}
+.call img{
+    width:33px;
+    height: 21px;
+}
+.call a{
+    margin-left:10px;
+    color:#fff;
+    font-size:36px;
+}
+.call p{
+    color:#fff;
+    font-size:12px;
+}
+.call a,.call img{
+    display: inline-block;
+    vertical-align:middle;
+}
+.sz_160{
+    font-size:100px;
+}
+.sz_99{
+    font-size:75px;
+}
+.sz_74{
+    font-size:50px;
+}
+.sz_119{
+    font-size:90px;
+}
+.banner{
+    background:url("images/hero.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    min-height: 688px;
+}
+/*===================================================
+           ==Navigation CSS==
+===================================================*/
+.navigation{
+    background:#000;
+}
+.navigation_link ul li{
+    text-align:center;
+    width:16.4%;
+    display: inline-block;
+    vertical-align:middle;
+}
+.navigation_link ul li a{
+    font-size:15px;
+    color:#fff;
+    display: inline-block;
+    padding: 29px 0;
+}
+/*===================================================
+           ==Merit CSS==
+===================================================*/
+.benefit_area{
+    padding:111px 0;
+}
+.benefit_area h2{
+    margin-bottom:53px;
+    font-size:38px;
+    color:#000;
+    text-align:center;
+}
+.single_benefit{
+    margin-bottom: 12px;
+    padding: 16px 24px 18px 20px;
+    background:#bcb396;
+}
+.single_benefit p,.single_benefit h3,.single_benefit h4,.number_benefit{
+    display: inline-block;
+    color:#fff;
+    vertical-align:middle;
+}
+.single_benefit p{
+    font-size:13px;
+}
+.number_benefit h3{
+    font-size: 52px;
+    padding-right: 10px;
+    padding-left: 5px;
+    position: relative;
+    margin-right: 15px;
+    line-height: 45px;
+}
+.number_benefit h3::after{
+    position: absolute;
+    content:"";
+    top: 0;
+    right:0;
+    height: 74px;
+    width:1px;
+    background:#fff;
+}
+.single_benefit h4{
+    font-size: 18px;
+    letter-spacing:.2em;
+}
+/*===================================================
+           ==Obtain CSS==
+===================================================*/
+.obtain_area{
+    background:url(images/skyscrapper.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+    padding:70px 0 123px 0;
+}
+.obtain_step{
+    padding: 65px 67px 80px;
+    background:#fff;
+}
+.obtain_title{
+    text-align:center;
+    color:#fff;
+    position: relative;
+}
+.obtain_title::after,.obtain_title::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    border: 1px dotted #fff;
+    height: 133px;
+    width: 1px;
+    transform: rotate(142deg);
+}
+.obtain_title::before{
+    right:0;
+    left:initial;
+    transform: rotate(30deg);
+}
+.obtain_title h3{
+    font-size:25px;
+}
+.obtain_title h2:nth-child(2){
+    font-size:33px;
+    margin: 12px 0 36px 0;
+}
+.obtain_title h2:last-child{
+    font-size:54px;
+    margin-bottom: 30px;
+}
+.small_house_area{
+    text-align: center;
+    padding: 72px 0;
+}
+.step_image{
+    text-align:center;
+}
+.sm_h{
+    text-align:center;
+    position: relative;    
+    display: inline-block;
+}
+.sm_h h4{
+    margin-bottom:30px;
+    color:#3d3d3d;
+    font-size:20px;
+}
+.sm_h p{
+    color:#3d3d3d;
+    margin-bottom:18px;
+    font-size:16px;
+}
+.cone_msg{
+    position:absolute;
+    display: inline-block;
+    border: 1px solid #c1a158;
+    padding: 12px 41px;
+    text-align: center;
+}
+.small_house_1 .cone_msg{
+    top: 101%;
+    left: 50px;
+}
+.small_house_2 .cone_msg {
+    bottom: -43px;
+    left: 30px;
+}
+.cone_msg::before{
+    content: "";
+    position: absolute;
+    top: -58px;
+    left: 28px;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 59px solid #c1a158;
+}
+.cone_msg::after{
+    content: "";
+    position: absolute;
+    top: -59px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 60px solid #fff;
+}
+.cone_msg p{
+    margin: 0;  
+    color:#c1a158;
+    font-size:20px;
+    line-height:30px;
+}
+/*===================================================
+           ==House Design Gallery CSS==
+===================================================*/
+.design_gallery{    
+    background: #f0ebe7;
+}
+.gallery_picture{
+    text-align: center;
+    margin-top: 40px;
+}
+/*===================================================
+           ==House Owner's Voice CSS==
+===================================================*/
+.owner_voice .cmn_title h2{
+    margin-bottom:30px;
+}
+.owner_voice .cmn_title h3{
+    margin-bottom:70px;
+    line-height: 40px;
+}
+.owner_info p{
+    line-height: 38px;
+    font-size:16px;
+    color:#000;
+    font-weight: 600;
+    letter-spacing: .2em;
+}
+.voice_list{
+    margin-top:60px;
+}
+.voice_list ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.voice_list ul li:first-child{
+    margin: 0;
+}
+/*===================================================
+           ==Residential CSS==
+===================================================*/
+.residential_area{
+    text-align:center;
+    padding:123px 0 108px 0;
+    background:url(images/parallaxbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.residential_area::before{
+    position: absolute;
+    content: "";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.residential{
+    text-align:center;
+}
+.residential_area h2{
+    font-size:38px;
+    color:#fff;  
+    position:relative;
+    z-index: 3;  
+}
+.residential p{
+    color:#fff;
+    font-size:18px;
+    line-height:45px;
+}
+/*===================================================
+           ==Property Information CSS==
+===================================================*/
+.merit_area{
+    padding:106px 0 0;
+}
+.merit_title{
+    text-align:center;
+}
+.merit_title h2{
+    color:#000;
+    font-size:38px;
+    font-weight:500;
+}
+.merit_title p{
+    color:#000;
+    font-size:18px;
+    font-weight:500;    
+    margin: 17px 0 53px 0;
+}
+.merit_area .col-md-7,.merit_area .col-md-5{
+    padding:0;
+}
+.merit_img img{
+    width: 100%;
+    height: 100%;
+}
+.merit_desc{
+    background:#f0ebe7;
+    padding:97px 34px 82px 65px;
+}
+.merit_desc p{
+    color:#000;
+    font-size:16px;
+    font-weight:600;
+    line-height:34px;
+}
+.merit_desc p:nth-child(2){
+    margin:37px 0;
+}
+/*===================================================
+           ==Property Information CSS==
+===================================================*/
+.property_info{
+    padding:120px 0;
+    background:#333030;
+}
+.property_info .cmn_title h2,.property_info .cmn_title h3{
+    color:#fff;
+}
+.property_info .cmn_title h2{
+    margin-bottom: 9px;
+}
+.property_info .cmn_title h3{
+    margin-bottom: 16px;
+}
+.info_list_area,.info_list_area h2{
+    position: relative;
+}
+.info_list_area h2{
+    font-size:28px;
+    color:#fff;
+    text-align:center;
+    margin-bottom: 60px;
+}
+.info_list_area::before,.info_list_area h2::before,.info_list_area::after,.info_list_area h2::after{
+    content:"";
+    position: absolute;    
+    width: calc(50% - 100px);
+    height: 1px;
+    background:#fff;
+}
+.info_list_area::before{
+    top: 14px;
+    left: 15px;
+}
+.info_list_area h2::before{
+    top: 18px;
+    left: 15px;
+}
+.info_list_area::after{
+    right: 15px;
+    top: 15px;
+}
+.info_list_area h2::after{
+    right: 15px;
+    top: 18px;
+}
+.info_list li{
+    margin-bottom:19px;
+}
+.property_desc h3{
+    font-size:20px;
+    color:#fff;
+    font-weight:600;
+}
+.property_img,.property_desc{
+    display: inline-block;
+    vertical-align: middle;
+}
+.property_img{
+    margin-right: 30px;
+}
+/*===================================================
+           ==Home Member Information CSS==
+===================================================*/
+.information{
+    padding: 101px 0;
+    background: #f6f4f1;
+    
+}
+.information h2{
+    text-align: center;
+    font-size:38px;
+    color:#000;
+}
+.information > p{
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+    color: #100909;
+    margin: 30px 0 40px 0;
+}
+.member_title{
+    padding: 14px 0;
+    background: #b9a788;
+    text-align: center;
+}
+.member_title h3{
+    color: #fff;
+    font-size: 28px;
+}
+.home_member_list{
+    padding: 25px;
+    background:#ebe6df;
+}
+.home_member_list ul li{
+    display: inline-block;
+    margin-right: 7px;
+    width: 32.5%;
+    vertical-align: top;
+}
+.home_member_list ul li:last-child{
+    margin-right:0;
+}
+.single_member{ 
+    min-height: 213px;
+    padding: 23px;   
+    background:#fff;
+}
+.single_member h3{
+    padding: 17px 0;
+    text-align: center;
+    color:#b7a669;
+    position: relative;
+    margin-bottom:20px;
+    font-size:24px;
+}
+.single_member h3::after,.single_member h3::before{
+    content:"";
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 1px;
+    border:1px dashed #b7a669;
+}
+.single_member h3::after{
+    top: 0;
+}
+.single_member h3::before{
+    bottom: 0;
+}
+.single_member p{
+    color:#514d40;
+    font-size:15px;
+    line-height:26px;
+}
+.registration_btn{
+    margin-top:42px;
+    text-align:center;
+}
+.registration_btn button{
+    box-shadow: 0 4px #7d2b34;
+    color:#fff;
+    font-size:28px;
+    background:#a11424;
+    border-radius: 5px;
+    height:79px;
+    line-height:79px;
+    text-align:center;
+    border:0;
+    padding:0 108px;
+}
+.registration_btn button:hover{
+    background: #000;
+    box-shadow: 0 4px #100f0f;
+}
+/*===================================================
+           ==Footer CSS==
+===================================================*/
+footer{
+    padding:70px 0 80px;
+}
+.inquiry_form{
+    padding:55px 70px 47px;
+    background-position: center center;
+    background: url(images/border.png);
+    background-size: 100% 100%;
+}
+.inquiry_form h2{
+    padding-bottom: 15px;
+    text-align:center;
+    font-size:31px;
+    color:#231815;
+    line-height:51px;
+    font-weight:500;
+}
+.contact_us button{
+    padding-left: 151px;
+    padding-right: 130px;
+    position: relative;
+    border: 0;
+    background: #e2ac2a;
+    border-radius: 6px;
+    height: 77px;
+    font-size:18px;
+    color:#fff;
+    line-height: 77px;
+}
+.contact_us button:hover{
+    background: #fff;
+    color: #e2ac2a;
+}
+.contact_us button::after{
+   position: absolute;
+    content: url(images/msg.png);
+    top: 2px;
+    left: 112px;
+    color: #fff;
+}
+.contact_us_info,.contact_us,.number h3,.number p{
+    display: inline-block;
+    vertical-align:middle;
+}
+.contact_us_info,.contact_us{
+    vertical-align:top;
+}
+.footer_contact{
+    margin-top:32px;
+}
+.contact_us_info{
+    margin-right:40px;
+}
+.number h3{
+    font-size:50px;
+    color:#000;
+}
+.number p{
+    font-size:15px;
+    color:#3e3a39
+}
+.footer_bottom{
+    text-align:center;
+    box-shadow: 10px 30px 40px rgba(0, 0, 0, 0.2);
+}
+
+/*===================================================
+           ==Responsive CSS==
+===================================================*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .banner_info p{
+        font-size:19px;
+    }
+    .banner_info h3{
+        font-size:30px;
+    }
+    .banner_bottom {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    .sz_160{
+        font-size: 61px;
+    }
+    .sz_99{
+        font-size: 55px;
+    }
+    .sz_119 {
+        font-size: 70px;
+    }
+    .no_1{
+        margin: 15px 0 0 30px;
+    }    
+    .merit_desc p{
+        font-size:14px;
+    }
+    .merit_desc p:nth-child(2) {
+        margin: 10px 0;
+    }
+    .merit_img img{
+        height:430px;
+    }
+    .merit_desc {
+        min-height:430px;
+        padding: 30px;
+    }
+    .navigation_link ul li a{
+        font-size:14px;
+    }
+
+    .owner_info p{
+        line-height: 30px;
+        font-size: 15px;
+        letter-spacing: .1em;
+    }
+    .inquiry_form {
+        padding: 35px;
+    }
+    .inquiry_form h2{
+        font-size:20px;
+    }
+    .footer_contact{
+        text-align: center;
+    }
+    .contact_us{
+        margin-top: 20px;
+    }
+    .single_member h3{
+        font-size:22px;
+    }
+    .single_member {
+        height: 230px;
+    }
+    .property_img {
+        margin-right: 8px;
+    }
+    .property_desc h3{
+        font-size:16px;
+    }
+    .single_benefit h4 {
+        font-size: 14px;
+        letter-spacing: .1em;
+    }
+    .number_benefit h3::after{
+        height: 57px;
+    }
+    .small_house_2 .cone_msg {
+        bottom: -45px;
+        left: 10px;
+    }
+     .obtain_title::before {
+        right: 20px;
+    }
+    .obtain_title::after {
+        left: 20px;
+    }
+    .obtain_title h2:nth-child(2){
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .banner_info{
+        text-align:center;
+        margin-top:20px;
+    }
+    .header_top {
+        padding: 30px 0;
+        text-align: center;
+    }
+    .call {
+        margin-bottom: 20px;
+    }
+    .header_bottom {
+        vertical-align: middle;
+    }
+    .banner_bottom {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .navigation_link ul li{
+        width: 32.4%;
+    }
+    .navigation_link ul li a {
+        padding: 13px 0;
+    }
+    .merit_desc{
+        padding: 50px 20px;
+    }
+    .owner_info{
+        margin-top:40px;
+     }
+     .voice_list{
+        text-align:center;
+     }
+     .owner_img{
+        text-align:center;
+     }
+    .inquiry_form h2{
+        font-size:20px;
+    }
+    .footer_contact{
+        text-align: center;
+    }
+    .inquiry_form {
+        padding:40px;
+    }
+    .contact_us {
+        margin-top: 15px;
+    }
+    .home_member_list ul li{
+        width: 31.5%;
+    }
+    .single_member {
+        height: 303px;
+    }
+    .property_img {
+        margin-right: 5px;
+    }
+    .property_desc h3{
+        font-size: 13px;
+        margin-top:20px;
+    }
+    .info_list li {
+        margin-bottom: 30px;
+    }
+    .single_benefit h4 {
+        font-size: 12px;
+        letter-spacing:initial; 
+    }
+    .single_benefit {
+        padding:25px 8px;
+    }
+    .number_benefit h3 {
+        font-size: 38px;
+        padding-right: 8px;
+        margin-right: 8px;
+    }
+    .number_benefit h3::after{
+        height: 40px;
+    }
+    .small_house_1{
+        margin-bottom: 120px;
+    }
+    .obtain_step {
+        padding: 50px;
+    }
+    .obtain_title h2:nth-child(2){
+        font-size: 23px;
+    }
+    .obtain_title::before {
+        right: 20px;
+    }
+    .obtain_title::after {
+        left: 20px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .tagline p{
+        margin-top:20px;
+    }
+    .header_top {
+        padding: 20px;
+    }
+    .banner_info {
+        margin-top: 20px;
+    }
+    .banner_info{
+        text-align:center;
+    }
+    .banner_info p{
+        font-size:18px;
+    }
+    .sz_160 {
+    font-size: 50px;
+    }
+    .sz_99,.sz_74{
+        font-size: 30px;
+    }
+    .sz_119 {
+        font-size: 40px;
+    }
+    .banner_info h3{
+        font-size: 20px;
+        letter-spacing: .2em;
+    }
+    .banner_info h1{
+        margin: 30px 0;
+    }
+    .banner_bottom {
+        text-align:center; 
+        margin-left:0;
+        margin-top: 40px;
+    }
+    .call a {
+        font-size: 25px;
+    }
+    .no_1{
+        margin: 30px 0;
+    }
+    .header_bottom{
+        vertical-align:middle;
+    } 
+    .residential_area{
+        padding:50px 0;
+    }
+    .residential_area h2{
+        font-size:25px;
+        padding:0 5px;
+    }
+    .residential {
+        margin-top: 30px;
+    }
+    .residential p{
+        font-size:16px;
+    }
+     .navigation_link ul li a{
+       padding:15px 0;
+     }
+    .navigation_link ul li{
+        width: 100%;
+    }
+    .benefit_area {
+        padding: 40px 0;
+    }
+    .benefit_area h2 {
+        margin-bottom: 36px;
+        font-size: 26px;
+    }
+     .merit_area{
+        padding:50px 0;
+     }
+     .merit_title h2{
+        font-size:28px;
+     }
+     .merit_desc{
+        padding:30px;
+     }
+     .owner_info{
+        margin-top:40px;
+     }
+     .voice_list{
+        text-align:center;
+    }     
+    .footer_contact {
+        text-align: center;
+    } 
+    .inquiry_form {
+        padding: 10px;
+    }
+    .inquiry_form h2{
+        font-size: 22px;
+    }
+    .contact_us_info{
+        margin-right:0;
+    }
+    .contact_us_info p{
+        margin: 10px 0;
+    }
+    .number h3 {
+        font-size: 20px;
+    }
+    .contact_us{
+        margin: 30px 0;
+    }
+    .contact_us button::after{
+        left: 8px;
+    }
+    .contact_us button {
+        padding-left: 45px;
+        padding-right: 25px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .member_title h3 {
+        font-size: 20px;
+    }
+    .home_member_list {
+        padding: 15px; 
+    }
+    .home_member_list ul li {
+        margin-bottom: 20px;
+        margin-right: 0;
+        width: 100%;
+    }
+    .home_member_list,.single_member{
+        padding: 10px;       
+    }
+    .single_member h3{
+        font-size: 16px;
+    }
+    .registration_btn button{
+        padding: 0 5px;
+    }
+    .information h2{
+        font-size:30px;
+        padding: 0 15px;
+    }
+    .information > p{
+        padding:0 20px;
+    }
+    .information {
+        padding: 45px 0;
+    }
+    .property_desc h3{
+        margin-top:20px;
+    }
+    .info_list li {
+        margin-bottom: 30px;
+    }
+    .property_info{
+        padding:60px 0;
+    }
+    .cmn_title h2{
+        font-size:27px;
+    }
+    .info_list_area h2{
+        margin-bottom:30px;
+    }
+    .property_img{
+        margin-right:0;
+    }
+    .obtain_step {
+        padding: 10px;
+    }
+    .single_benefit{
+        text-align: center;
+    }
+    .number_benefit{
+        display: block;
+       margin-bottom: 30px;
+    }
+    .number_benefit h3::after{
+        height: 50px;
+    }
+    .number_benefit h3::after{
+        height: 40px;
+    }
+    .sm_h h4 {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .cone_msg p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .cone_msg{
+        padding: 10px;
+    }
+    .small_house_1{
+        margin-bottom: 100px;
+    }
+    .small_house_2 .cone_msg {
+      bottom: -40px;
+    }
+    .obtain_title h3 {
+        font-size: 16px;
+    }
+    .obtain_title h2:nth-child(2) {
+        font-size: 20px;
+        margin: 20px;
+    }
+    .obtain_title h2:last-child {
+        font-size: 27px;
+        margin: 30px 0;
+    }
+    .obtain_title::after, .obtain_title::before{
+        height: 50px;
+        top: 40px;
+    }
+    .section_padding {
+        padding: 50px 0;
+    }
+    .property_desc{
+        display: block;
+     }
+}   
+    
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .contact_us {
+         margin: 15px 0; 
+    }
+    .contact_us_info {
+        margin-right: 15px;
+    }
+    .inquiry_form {
+        padding: 40px;
+    }
+    .number_benefit {
+        display: inline-block;
+         margin-bottom: 0; 
+    }
+    .single_benefit{
+        padding: 10px;
+        text-align: left;
+    }
+    .single_benefit h4 {
+        font-size: 16px;
+        letter-spacing: initial;
+    }
+    .home_member_list, .single_member {
+        padding: 40px;
+    }
+    .obtain_title::before {
+        right: 10px;
+    }
+    .obtain_title::after {
+        left: 10px;
+    }
+    .obtain_title::after, .obtain_title::before{
+        height: 70px;
+    }
+    .small_house_2 .cone_msg {
+        bottom: -16px;
+    }
+    .property_desc{
+        display: inline-block;
+     }
+    .property_desc h3{
+        margin-left:5px;
+    }
+} 
